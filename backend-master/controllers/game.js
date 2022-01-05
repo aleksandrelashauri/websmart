@@ -22,11 +22,11 @@
 export default function getComputerChoice() {
   const rand = Math.random();
   if (rand < 0.34) {
-    return 'rock';
+    return 'ARCHERS';
   } else if (rand <= 0.67) {
-    return 'paper';
+    return 'PIKEMEN';
   } else {
-    return 'scissors';
+    return 'CAVALRY';
   }
 }
 
@@ -34,20 +34,20 @@ export default function getComputerChoice() {
 // export default  function getWinner(p, c) {
 //   if (p === c) {
 //     return 'draw';
-//   } else if (p === 'rock') {
-//     if (c === 'paper') {
+//   } else if (p === 'ARCHERS') {
+//     if (c === 'PIKEMEN') {
 //       return 'computer';
 //     } else {
 //       return 'player';
 //     }
-//   } else if (p === 'paper') {
-//     if (c === 'scissors') {
+//   } else if (p === 'CAVALRY') {
+//     if (c === 'ARCHERS') {
 //       return 'computer';
 //     } else {
 //       return 'player';
 //     }
-//   } else if (p === 'scissors') {
-//     if (c === 'rock') {
+//   } else if (p === 'PIKEMEN') {
+//     if (c === 'CAVALRY') {
 //       return 'computer';
 //     } else {
 //       return 'player';
